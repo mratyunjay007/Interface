@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btnclick;
+    Boxer boxer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnclick=findViewById(R.id.btnclick);
 
-        final Boxer boxer=new Boxer();
+        boxer=new Boxer();
 
         btnclick.setOnClickListener(new View.OnClickListener(){
             @Override
